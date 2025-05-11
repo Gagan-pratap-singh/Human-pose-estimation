@@ -17,15 +17,18 @@ MediaPipe uses TensorFlow Lite in the backend to perform pose estimation efficie
 
 Key Features of MediaPipe Pose Estimation: 1.3D Pose Estimation: MediaPipe Pose estimates the x, y, and z coordinates for each landmark, where:
 
-x and y represent the 2D position of a landmark.
+1.x and y represent the 2D position of a landmark.
 
-z gives the depth of a landmark relative to others, providing an indication of how far or close a specific point is to the camera. This depth information allows for a more accurate understanding of body posture, enabling the model to detect and track poses in three-dimensional space.
+2.z gives the depth of a landmark relative to others, providing an indication of how far or close a specific point is to the camera. This depth information allows for a more accurate understanding of body posture, enabling the model to detect and track poses in three-dimensional space.
 
-Real-time Performance: MediaPipe Pose uses BlazePose, a cutting-edge research model, to achieve high-fidelity pose tracking. This solution is optimized for real-time inference, allowing it to run efficiently on a wide range of devices including mobile phones, desktops, and laptops.
+3.Real-time Performance: MediaPipe Pose uses BlazePose, a cutting-edge research model, to achieve high-fidelity pose tracking. This solution is optimized for real-time inference, allowing it to run efficiently on a wide range of devices including mobile phones, desktops, and laptops.
 
-Potential Applications: The ability to detect keypoints in real-time is valuable across various use cases such as yoga, dance, fitness applications, and AR. Fitness and sports motion analysis. Gesture recognition for interactive applications. Motion tracking in gaming or animation. Examples: a) Quantifying physical exercises: Ensuring correct form and tracking progress over time. b) Sign language recognition: Mapping hand gestures to text or speech. c) Augmented Reality (AR): Overlaying digital elements on the human body based on pose data.
+4.Potential Applications: The ability to detect keypoints in real-time is valuable across various use cases such as yoga, dance, fitness applications, and AR. Fitness and sports motion analysis. Gesture recognition for interactive applications. Motion tracking in gaming or animation. Examples: a) Quantifying physical exercises: Ensuring correct form and tracking progress over time. b) Sign language recognition: Mapping hand gestures to text or speech. c) Augmented Reality (AR): Overlaying digital elements on the human body based on pose data.
 
-#Pose Estimation Quality
+![alt text](image.png)
+
+#Pose Estimation Quality 
+
 To assess the effectiveness of MediaPipe Pose, we evaluate the model using different datasets across various domains:
 
 Yoga: Predicting the pose of individuals performing yoga. Dance: Capturing dynamic movements in dance. HIIT: Tracking physical exercise movements during high-intensity interval training. These validation datasets help demonstrate the model's ability to detect keypoints consistently, even for individuals positioned 2-4 meters from the camera.
