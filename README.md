@@ -24,3 +24,22 @@ z gives the depth of a landmark relative to others, providing an indication of h
 Real-time Performance: MediaPipe Pose uses BlazePose, a cutting-edge research model, to achieve high-fidelity pose tracking. This solution is optimized for real-time inference, allowing it to run efficiently on a wide range of devices including mobile phones, desktops, and laptops.
 
 Potential Applications: The ability to detect keypoints in real-time is valuable across various use cases such as yoga, dance, fitness applications, and AR. Fitness and sports motion analysis. Gesture recognition for interactive applications. Motion tracking in gaming or animation. Examples: a) Quantifying physical exercises: Ensuring correct form and tracking progress over time. b) Sign language recognition: Mapping hand gestures to text or speech. c) Augmented Reality (AR): Overlaying digital elements on the human body based on pose data.
+
+#Pose Estimation Quality
+To assess the effectiveness of MediaPipe Pose, we evaluate the model using different datasets across various domains:
+
+Yoga: Predicting the pose of individuals performing yoga. Dance: Capturing dynamic movements in dance. HIIT: Tracking physical exercise movements during high-intensity interval training. These validation datasets help demonstrate the model's ability to detect keypoints consistently, even for individuals positioned 2-4 meters from the camera.
+
+Categories of human pose detection:
+1.2D Pose Estimation
+
+3D Pose Estimation
+
+Rigid Pose Estimation (6D Pose Estimation)
+
+Single Pose Estimation
+
+Multi-Pose Estimation
+
+Human Pose detection with OpenCV Output:
+OpenCV Output for Human Pose Detection The output of a pose detection system, such as the one in OpenCV, typically includes: Skeleton Visualization: A graphical skeleton is drawn over the human body using lines to connect the predicted keypoints. Pose Confidence: Confidence scores that indicate how likely the model is that the detected pose is correct.
